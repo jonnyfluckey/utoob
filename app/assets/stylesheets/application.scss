@@ -26,3 +26,27 @@
    color: #d2d2d2 !important;
    text-decoration: none !important;
   }
+
+  .footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid;
+    background-color: #4d2147;
+    color: white;
+}
+.nav{
+  background-color: #4d2147;
+  color: white;
+  padding: 1rem;
+}
+li.nav-item.nav-link.active {
+  background-color: transparent;
+  border: 1px solid;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #022147;
+  border-color: #022147;
+}
