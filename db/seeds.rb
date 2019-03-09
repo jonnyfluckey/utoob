@@ -69,7 +69,6 @@ Movie.create(
   genre: 'Action',
   description: 'http://www.imdb.com/title/tt0086190/', trailer: 'https://www.youtube.com/embed/7L8p7_SLzvU'
   )
-
   Movie.create(
   title: 'Batman Begins',
   duration: '2hr 20min',
@@ -125,7 +124,6 @@ Movie.create(
   genre: 'Comedy',
   description: 'http://www.imdb.com/title/tt0090305/', trailer: 'https://www.youtube.com/embed/9qd04u2Yj44'
   )
-
   Movie.create(
   title: 'Major League',
   duration: '1hr 47min',
@@ -147,7 +145,6 @@ Movie.create(
   genre: 'Comedy',
   description: 'http://www.imdb.com/title/tt0088763/', trailer: 'https://www.youtube.com/embed/qvsgGtivCgs'
   )
-
   Movie.create(
   title: 'Anchorman',
   duration: '1hr 34min',
@@ -183,7 +180,6 @@ Movie.create(
   genre: 'Comedy',
   description: 'http://www.imdb.com/title/tt0071853/', trailer: 'https://www.youtube.com/embed/LG1PlkURjxE'
   )
-
   Movie.create(
   title: 'Blues Brothers',
   duration: '2hr 13min',
@@ -197,7 +193,6 @@ Movie.create(
   genre: 'Comedy',
   description: 'http://www.imdb.com/title/tt0077975/', trailer: 'https://www.youtube.com/embed/BoS3-yHoaSY'
   )
-
   Movie.create(
   title: 'The Godfather',
   duration: '2hr 55min',
@@ -231,4 +226,4 @@ Movie.create(
   duration: '1hr 36min',
   genre: 'Drama',
   description: 'http://www.imdb.com/title/tt0117802/', trailer: 'https://www.youtube.com/embed/nWCct8XbQD0'
-  )
+)
