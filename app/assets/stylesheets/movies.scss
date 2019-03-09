@@ -1,3 +1,15 @@
 // Place all the styles related to the movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.movie-button{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: .5rem;
+}
+a{color: inherit;}
+a.hover{color: #d2d2d2;}
+
+button{width: 100%;}

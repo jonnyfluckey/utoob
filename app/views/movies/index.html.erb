@@ -1,13 +1,28 @@
-<h1>All Movies</h1>
-<%= button_to "Log Out", destroy_user_session_path, method: :delete %>
 
-<h2>Welcome </h2>
+<div class="container">
 
-<h3>Movies</h3>
 
-<% @movies.each do |m| %>
-  <ul>
-    <li><%= link_to m.title, movie_path(m) %></li>
-  </ul>
-<% end %>
+
+<center><h1>Welcome!</h1></center>
+<h2>Viewing All Movies:</h2>
+
+  <div class="row">
+  <% @movies.each do |m| %>
+
+
+    
+    <div class="col-md-3 movie-button">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="/assets/movie-img.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= m.title %></h5>
+        <p class="card-text"><%= link_to 'Click here to see full description.', m.description %></p>
+        <button class="btn btn-primary"><%= link_to m.title, movie_path(m) %></button>
+      </div>
+    </div>
+  
+   </div>
+  <% end %>
+  </div>
+</div>
 
