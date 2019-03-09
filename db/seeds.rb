@@ -10,19 +10,20 @@ Movie.create(
 title: 'The Dark Night',
 duration: '2hr 32min',
 genre: 'Action',
-description: 'http://www.imdb.com/title/tt0468569/',
+description: 'When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
 trailer: 'https://www.youtube.com/embed/EXeTwQWrcwY'
 )
 Movie.create(
 title: 'The Bourne Identity',
 duration: '1hr 59min',
 genre: 'Action',
-description: 'http://www.imdb.com/title/tt0258463/', trailer: 'https://www.youtube.com/embed/cD-uQreIwEk'
+description: 'A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and attempting to regain his memory.',
+trailer: 'https://www.youtube.com/embed/cD-uQreIwEk'
 )
 Movie.create( title: 'Avatar',
 duration: '2hr 42min',
 genre: 'Action',
-description: 'http://www.imdb.com/title/tt0499549/?ref_=fn_al_tt_1', trailer: 'https://www.youtube.com/embed/5PSNL1qE6VY'
+description: 'A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.', trailer: 'https://www.youtube.com/embed/5PSNL1qE6VY'
 )
 Movie.create(
 title: 'Kill Bill Vol 1',
@@ -189,9 +190,7 @@ Movie.create(
 title: 'Forrest Gump',
 duration: '2hr 22min',
 genre: 'Drama',
-description: '
-                    The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.
-            ', trailer: 'https://www.youtube.com/embed/YNh9Es8Ut6U'
+description: 'http://www.imdb.com/title/tt0109830/', trailer: 'https://www.youtube.com/embed/YNh9Es8Ut6U'
 )
 Movie.create(
 title: 'Pulp Fiction',
