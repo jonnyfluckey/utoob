@@ -189,7 +189,9 @@ Movie.create(
 title: 'Forrest Gump',
 duration: '2hr 22min',
 genre: 'Drama',
-description: 'http://www.imdb.com/title/tt0109830/', trailer: 'https://www.youtube.com/embed/YNh9Es8Ut6U'
+description: '
+                    The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.
+            ', trailer: 'https://www.youtube.com/embed/YNh9Es8Ut6U'
 )
 Movie.create(
 title: 'Pulp Fiction',

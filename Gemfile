@@ -14,6 +14,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'nokogiri'
+gem 'open-uri'
 
 group :development, :test do
   gem 'pry'
