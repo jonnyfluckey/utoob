@@ -16,8 +16,13 @@
       <img class="card-img-top" src="/assets/movie-img.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title"><%= m.title %></h5>
-        <p class="card-text"><%= link_to 'Click here to see full description.', m.description %></p>
-        <button class="btn btn-primary"><%= link_to m.title, movie_path(m) %></button>
+
+        <p class="card-text">
+        Duration: <%= m.duration %><br/>
+        Genre: <%= m.genre %><br/>
+        <%= link_to 'Click here to see full description.', m.description %>
+        </p>
+        <button class="btn btn-primary"><%= link_to 'View Trailer', movie_path(m) %></button>
       </div>
     </div>
   
