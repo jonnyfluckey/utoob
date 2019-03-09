@@ -1,2 +1,16 @@
 <h1>Comments</h1>
 
+<% @comments.each do |comment| %>
+
+  
+  <%= link_to 'Show Comment', movie_comment_path(comment) %>
+  <%= link_to 'Edit Comment', edit_movie_comment_path(comment) %>
+  <%= link_to 'Delete Comment', comment, method: :delete %>
+ 
+
+<% end %>
+
+ <%= link_to 'New Comment', movie_comments_path %>
+
+
+

@@ -3,3 +3,24 @@
      <%= youtube_frame(@movie.trailer) %>
 
     <%= puts imdb_scrape(@movie.description) %>
+
+<div class="container">
+  <center><h1><%= @movie.title %></h1></center>
+  <div class"row">
+  <div class="col-md-8 offset-md-2">
+
+    <div class="embed-responsive embed-responsive-16by9 card-img-top">
+    <%= youtube_frame(@movie.trailer) %>
+    </div>
+    <div class="text-wrap">
+      <h5><%= @movie.title %></h5>
+      <p>
+      Duration: <%= @movie.duration %><br/>
+      Genre: <%= @movie.genre %><br/>
+      <%= link_to 'Click here to see full description.', @movie.description %>
+      </p>
+      <button class="btn btn-primary"><%= link_to 'Back to movies', movies_path %></button>
+    </div>
+     </div>
+  </div>
+</div>
