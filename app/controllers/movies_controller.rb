@@ -6,6 +6,7 @@ class MoviesController < ApplicationController
   end
 
   def show
+    @comments = @movie.comments
   end
 
   def new
