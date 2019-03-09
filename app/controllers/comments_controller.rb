@@ -10,11 +10,12 @@ class CommentsController < ApplicationController
   end
 
   def new
-    @comment = current_user.movies.new(comment_params)
+
+    @comment = @movie.comments.new()
   end
 
   def create
-    @comment = Comment.new(comment_params)
+    @comment = @movie.comment.new(comment_params)
     if @comment.save
       redirect_to movie_comments_path
     else
@@ -37,7 +38,7 @@ class CommentsController < ApplicationController
   end
 
   def set_movie
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:movie_id])
   end
 
 
