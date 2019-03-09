@@ -1,9 +1,14 @@
+<div class="container">
+<div class="row">
+<div class="col-md-12">
 <h1>Show Comments</h1>
 
 
 <%= @comment.body %>
 
-
-
-<%= link_to 'Back', movie_comment_path %>
+<%= link_to 'Back', movie_path(@movie) %>
+<%= link_to 'Delete Comment', method: :delete  %>
+</div>
+</div>
+</div>
 
