@@ -1,10 +1,10 @@
-<h1>New Comments/h1>
+<h1>New Comments</h1>
 
-<%= form_with(model: @comment, local: true) do |f| %>
+<%= form_with(model: [@movie, @comment], local: true) do |f| %>
 
   <%= f.label :body %>
   <%= f.text_field :body, required: true %>
 
   <%= f.submit %>
 
-  <%= end %>
+  <% end %>
