@@ -1,7 +1,4 @@
 
 <H1>Single Movie</h1>
-
-  <% @movies.each do |m| %>
-    <iframe src=#{@movies.url(movies.trailer)} frameborder="0" allowfullscreen="" width="560" height="315">
-    </iframe>
-  <% end %>
+     <%= youtube_frame(@movie.trailer) %>
+  
