@@ -14,10 +14,28 @@ class CommentsController < ApplicationController
     @comments = Comment.new
   end
 
+  def create
+    @comment = Comment.new(comment_params)
+    if @comment.save
+      redirect_to  ?
+    else
+      render :new
+    end
+  end
+
   def edit
   end
 
+  def destroy
+    @comment.destroy
+    redirect_to ?
+  end
+
   private
+
+  def comment_params
+    params.require(:comment).permit(:?)
+  end
 
   def set_comment
     @comment = Comment.find(params[:id])
