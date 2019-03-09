@@ -10,14 +10,13 @@ class CommentsController < ApplicationController
   end
 
   def new
-    @user = User.all - @comment.users
     @comment = current_user.movies.new(comment_params)
   end
 
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      redirect_to new_movie_comment_path
+      redirect_to movie_comments_path
     else
       render :new
     end
