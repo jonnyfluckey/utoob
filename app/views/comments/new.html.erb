@@ -1,5 +1,9 @@
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
 <h1>New Comments</h1>
-
+</div>
+<div class="col-md-12 text-center mb-5">
 <%= form_with(model: [@movie, @comment], local: true) do |f| %>
 
   <%= f.label :body %>
@@ -8,3 +12,6 @@
   <%= f.submit %>
 
   <% end %>
+  </div>
+  </div>
+  </div>
